@@ -2,14 +2,20 @@ body{
     background:black;
 }
 .container{
+    border:5px solid blue;
     display:flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
+   
 }
 .container__layout{
     
-    
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
     background: white;
-    width:200px;
-    height:200px;
+    /* top:100px; */
+    width:500px;
+    height:300px;
 }
