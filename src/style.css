@@ -1,21 +1,33 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
 body{
     background:black;
 }
 .container{
-    border:5px solid blue;
+    /* border:5px solid blue; */
     display:flex;
     flex-direction: row;
     justify-content: center;
    
 }
 .container__layout{
-    
+    position: relative;
     display:flex;
     align-items: center;
     justify-content:center;
-    position: relative;
     background: white;
-    /* top:100px; */
+    border-radius:20px;
+    top:100px;
     width:500px;
-    height:300px;
+    height:200px;
+}
+.container__bar{
+    position: relative;
+    top:15px;
+    border-radius:30px;
+    background: #dbd7cb;
+    width:400px;
+    height:20px;
 }

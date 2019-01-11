@@ -5,7 +5,6 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <p>Rajat is shit</p>
                 <Background />
             </div>
         )
