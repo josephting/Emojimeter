@@ -10,7 +10,6 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: center;
-   
 }
 .container__layout{
     position: relative;
@@ -29,5 +28,21 @@ body{
     border-radius:30px;
     background: #dbd7cb;
     width:400px;
-    height:20px;
+    height:15px;
+}
+.container__emoji{
+    position: absolute;
+}
+.container__emoji-slider{
+    position:absolute;
+    top:3px;
+    left:-200px;
+    border-radius:50%;
+    background:#facd49;
+    border:1px solid orange;
+    width:25px;
+    height:25px;
+}
+.slider{
+    transform:translateX(30px;)
 }
