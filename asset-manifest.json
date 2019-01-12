@@ -1,13 +1,13 @@
 {
-  "main.css": "/Emojimeter/static/css/main.44d6a24d.chunk.css",
-  "main.js": "/Emojimeter/static/js/main.dae30309.chunk.js",
-  "main.js.map": "/Emojimeter/static/js/main.dae30309.chunk.js.map",
+  "main.css": "/Emojimeter/static/css/main.222f3a0e.chunk.css",
+  "main.js": "/Emojimeter/static/js/main.4f98b159.chunk.js",
+  "main.js.map": "/Emojimeter/static/js/main.4f98b159.chunk.js.map",
   "static/js/1.fbfa9ac1.chunk.js": "/Emojimeter/static/js/1.fbfa9ac1.chunk.js",
   "static/js/1.fbfa9ac1.chunk.js.map": "/Emojimeter/static/js/1.fbfa9ac1.chunk.js.map",
   "runtime~main.js": "/Emojimeter/static/js/runtime~main.6708eb8a.js",
   "runtime~main.js.map": "/Emojimeter/static/js/runtime~main.6708eb8a.js.map",
-  "static/css/main.44d6a24d.chunk.css.map": "/Emojimeter/static/css/main.44d6a24d.chunk.css.map",
+  "static/css/main.222f3a0e.chunk.css.map": "/Emojimeter/static/css/main.222f3a0e.chunk.css.map",
   "index.html": "/Emojimeter/index.html",
-  "precache-manifest.ea5e3721d980ad3ac0b6781eeecd9e11.js": "/Emojimeter/precache-manifest.ea5e3721d980ad3ac0b6781eeecd9e11.js",
+  "precache-manifest.4a711587b5df6db3ae3b5381f1c110ad.js": "/Emojimeter/precache-manifest.4a711587b5df6db3ae3b5381f1c110ad.js",
   "service-worker.js": "/Emojimeter/service-worker.js"
 }

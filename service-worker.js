@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Emojimeter/precache-manifest.ea5e3721d980ad3ac0b6781eeecd9e11.js"
+  "/Emojimeter/precache-manifest.4a711587b5df6db3ae3b5381f1c110ad.js"
 );
 
 workbox.clientsClaim();
