@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/Emojimeter/static/js/runtime~main.6708eb8a.js"
   },
   {
-    "revision": "0c3ad21c5d3af8a48f7f",
-    "url": "/Emojimeter/static/js/main.0c3ad21c.chunk.js"
+    "revision": "558bb37159b27a78154d",
+    "url": "/Emojimeter/static/js/main.558bb371.chunk.js"
   },
   {
     "revision": "fbfa9ac1c04d6f818c50",
     "url": "/Emojimeter/static/js/1.fbfa9ac1.chunk.js"
   },
   {
-    "revision": "0c3ad21c5d3af8a48f7f",
-    "url": "/Emojimeter/static/css/main.cbadc1af.chunk.css"
+    "revision": "558bb37159b27a78154d",
+    "url": "/Emojimeter/static/css/main.62448b43.chunk.css"
   },
   {
-    "revision": "16b3ec7faa03dd0bfff58cfb5036aed6",
+    "revision": "772edfc8e01d51ca03fa902be1d73a65",
     "url": "/Emojimeter/index.html"
   }
 ];
