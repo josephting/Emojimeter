@@ -14,7 +14,7 @@ class Background extends React.Component {
         //console.log(this.state.translateX+"X");
         // this.state = { x: '', y: '' };
         this.down = this.down.bind(this);
-        // this.leave = this.leave.bind(this);
+        this.leave = this.leave.bind(this);
         this.up = this.up.bind(this);
         this.move = this.move.bind(this);
 
@@ -47,26 +47,27 @@ class Background extends React.Component {
     //     console.log(this.state.y);
     // }
     down(a) {
+        // console.log(a.pageX  + "chalu");
+        var  b = a.pageX;
+        this.setState({ mousedown: true, start: b });
 
-        this.setState({ mousedown: true, start: a.pageX });
-
-        console.log(a.pageX + "chalu");
+        console.log(a.pageX  + "chalu");
 
     }
 
-    // leave() {
-    //     this.setState({ mousedown: false })
+    leave() {
+        this.setState({ mousedown: false })
 
-    // }
+    }
     up(b) {
-        this.setState({ mousedown: false})
-        console.log(b.pageX + " "+this.state.start+"leave");
+        this.setState({ mousedown: false,start :b.pageX})
+        console.log(b.pageX + "leave");
     }
     move(event) {
         //console.log(this.state.mousedown+"boolean");
         if (!this.state.mousedown) return;
         else {
-            event.preventDefault();
+            // event.preventDefault();
             // console.log(event.pageX+" "+this.state.start);
             console.log("pagex" + event.pageX);
             console.log("mstart" + this.state.start);
@@ -84,14 +85,13 @@ class Background extends React.Component {
         // const { x, y } = this.state;
         // console.log(this.state.mousedown+"down");
         //console.log(this.state.translateX+"X");
-        console.log(this.state.start+"render");
         return (
 
             <div className="container">
                 <div className="container__layout">
                     <div className="container__bar"></div>
                     <div className="container__emoji">
-                        <div className="container__emoji-slider" onMouseDown={this.down}  onMouseUp={this.up} onMouseMove={(event)=>{this.move(event)}} style={{ transform: `translateX(${this.state.translateX}px)` }} >{this.state.translateX}</div>
+                        <div className="container__emoji-slider" onMouseDown={this.down}  onMouseUp={this.up} onMouseLeave = {this.leave}onMouseMove={(event)=>{this.move(event)}} style={{ transform: `translateX(${this.state.translateX}px)` }} ></div>
                     
                     </div>
                 </div>
