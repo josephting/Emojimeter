@@ -48,8 +48,8 @@ class Background extends React.Component {
     // }
     down(a) {
         // console.log(a.pageX  + "chalu");
-        var  b = a.pageX;
-        this.setState({ mousedown: true, start: b });
+        
+        this.setState({ mousedown: true, start: 382 });
 
         console.log(a.pageX  + "chalu");
 
@@ -60,7 +60,7 @@ class Background extends React.Component {
 
     }
     up(b) {
-        this.setState({ mousedown: false,start :b.pageX})
+        this.setState({ mousedown: false,start :382})
         console.log(b.pageX + "leave");
     }
     move(event) {
@@ -71,12 +71,12 @@ class Background extends React.Component {
             // console.log(event.pageX+" "+this.state.start);
             console.log("pagex" + event.pageX);
             console.log("mstart" + this.state.start);
-            const mo = this.state.start;
+            const mo = 382;
             const page = event.pageX;
             const dist = page - mo;
             console.log(dist);
             this.setState({ translateX: dist });
-            // console.log(page - mo + "move");
+            console.log(page - mo + "move");
         }
 
         // console.log(this.state.mousedown+"move");
