@@ -38,8 +38,9 @@ body{
     top:3px;
     left:-200px;
     border-radius:50%;
-    background:#facd49;
-    border:1px solid orange;
+    /* background:#facd49;
+    border:1px solid orange; */
+    background-image: url("nomouth.png");
     width:25px;
     height:25px;
 }
