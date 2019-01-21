@@ -14,7 +14,7 @@ class Background extends React.Component {
       mousedown: false,
       start: "",
       translateX: "",
-      image: ""
+      image: logo1
     };
     // console.log(this.state.start + "start");
     //console.log(this.state.translateX+"X");
