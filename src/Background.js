@@ -196,97 +196,111 @@ class Background extends React.Component {
     //console.log(this.state.translateX+"X");
     // console.log(this.state.image);
 
-    if (this.state.animation) {
-      return (
-        <div className="container">
-          <div className="container__layout">
-            <div className="container__bar" />
-            <div className="container__emoji">
-              <div
-                // className={
-                //   this.state.animation
-                //     ? "container__emoji-slider-animation"
-                //     : "container__emoji-slider"
-                // }
-                onMouseDown={this.down}
-                onMouseUp={this.up}
-                onMouseLeave={this.leave}
-                onMouseMove={event => {
-                  this.move(event);
-                }}
-                style={{ transform: `translateX(${this.state.translateX}px)` }}
-              >
-                <img
-                  src={this.state.image}
-                  className="container__emoji-slider"
-                  width="25"
-                  height="25"
-                  alt="img failed loading :("
-                />
-                <img
-                  src={this.state.image}
-                  className="container__emoji-slider-animation"
-                  width="25"
-                  height="25"
-                  alt="img failed loading :("
-                />
-                {/* <img
+    // if (this.state.animation) {
+    return (
+      <div className="container">
+        <div className="container__layout">
+          <div className="container__bar" />
+          <div className="container__emoji">
+            <div
+              // className={
+              //   this.state.animation
+              //     ? "container__emoji-slider-animation"
+              //     : "container__emoji-slider"
+              // }
+              onMouseDown={this.down}
+              onMouseUp={this.up}
+              onMouseLeave={this.leave}
+              onMouseMove={event => {
+                this.move(event);
+              }}
+              style={{ transform: `translateX(${this.state.translateX}px)` }}
+            >
+              {this.state.animation ? (
+                <div>
+                  <img
+                    src={this.state.image}
+                    className="container__emoji-slider"
+                    width="25"
+                    height="25"
+                    alt="img failed loading :("
+                  />
+                  <img
+                    src={this.state.image}
+                    className="container__emoji-slider-animation"
+                    width="25"
+                    height="25"
+                    alt="img failed loading :("
+                  />
+                </div>
+              ) : (
+                <div>
+                  <img
+                    src={this.state.image}
+                    className="container__emoji-slider"
+                    width="25"
+                    height="25"
+                    alt="img failed loading :("
+                  />
+                </div>
+              )}
+              {/* <img
                 src={this.state.image}
                 width="25"
                 height="25"
                 alt="img failed loading :("
-              /> */}
-              </div>
+                /> */}
             </div>
           </div>
         </div>
-      );
-    } else {
-      return (
-        <div className="container">
-          <div className="container__layout">
-            <div className="container__bar" />
-            <div className="container__emoji">
-              <div
-                // className={
-                //   this.state.animation
-                //     ? "container__emoji-slider-animation"
-                //     : "container__emoji-slider"
-                // }
-                onMouseDown={this.down}
-                onMouseUp={this.up}
-                onMouseLeave={this.leave}
-                onMouseMove={event => {
-                  this.move(event);
-                }}
-                style={{ transform: `translateX(${this.state.translateX}px)` }}
-              >
-                <img
-                  src={this.state.image}
-                  className="container__emoji-slider"
-                  width="25"
-                  height="25"
-                  alt="img failed loading :("
-                />
-                <img
-                  src={this.state.image}
-                  className="container__emoji-slider"
-                  width="25"
-                  height="25"
-                  alt="img failed loading :("
-                />
-                {/* <img
-                src={this.state.image}
-                width="25"
-                height="25"
-                alt="img failed loading :("
-              /> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    }
+      </div>
+    );
+    // } else {
+    //   return (
+    //     <div className="container">
+    //       <div className="container__layout">
+    //         <div className="container__bar" />
+    //         <div className="container__emoji">
+    //           <div
+    //             // className={
+    //             //   this.state.animation
+    //             //     ? "container__emoji-slider-animation"
+    //             //     : "container__emoji-slider"
+    //             // }
+    //             onMouseDown={this.down}
+    //             onMouseUp={this.up}
+    //             onMouseLeave={this.leave}
+    //             onMouseMove={event => {
+    //               this.move(event);
+    //             }}
+    //             style={{ transform: `translateX(${this.state.translateX}px)` }}
+    //           >
+    //             <img
+    //               src={this.state.image}
+    //               className="container__emoji-slider"
+    //               width="25"
+    //               height="25"
+    //               alt="img failed loading :("
+    //             />
+    //             <img
+    //               src={this.state.image}
+    //               className="container__emoji-slider"
+    //               width="25"
+    //               height="25"
+    //               alt="img failed loading :("
+    //             />
+    //             {/* <img
+    //             src={this.state.image}
+    //             width="25"
+    //             height="25"
+    //             alt="img failed loading :("
+    //           /> */}
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   );
+    // }
   }
 }
 
