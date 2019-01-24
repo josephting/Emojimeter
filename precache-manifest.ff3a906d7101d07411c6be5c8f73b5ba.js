@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Emojimeter/static/media/e16.4fdcfb1f.png"
   },
   {
-    "revision": "5eb3cd3d67b2af3a7673",
+    "revision": "dfa520023550c934fe2c",
     "url": "/Emojimeter/static/css/main.759a2a8e.chunk.css"
   },
   {
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/Emojimeter/static/media/e15.2f8f9615.png"
   },
   {
-    "revision": "5eb3cd3d67b2af3a7673",
-    "url": "/Emojimeter/static/js/main.5eb3cd3d.chunk.js"
+    "revision": "dfa520023550c934fe2c",
+    "url": "/Emojimeter/static/js/main.dfa52002.chunk.js"
   },
   {
     "revision": "59a261c721b775b3613617a8c0c00e1a",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/Emojimeter/static/media/e33.39c83107.png"
   },
   {
-    "revision": "abba5dd29d97173193958d2732c233b6",
+    "revision": "5e8cefff34ec3ed77c2b401c6ee21689",
     "url": "/Emojimeter/index.html"
   }
 ];
