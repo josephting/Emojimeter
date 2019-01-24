@@ -46,7 +46,8 @@ class Background extends React.Component {
       start: "",
       translateX: "",
       image: logo1,
-      animation: false
+      animation: false,
+      first: false
     };
     // console.log(this.state.start + "start");
     //console.log(this.state.translateX+"X");
@@ -84,11 +85,15 @@ class Background extends React.Component {
   //     console.log(this.state.y);
   // }
   down(a) {
-    // console.log(a.pageX  + "chalu");
     if (this.state.animation) {
-      this.setState({ mousedown: true, start: a.pageX, animation: false });
+      this.setState({ mousedown: true, animation: false });
     } else {
-      this.setState({ mousedown: true, start: a.pageX });
+      //console.log("pocha");
+      if (this.state.first === false) {
+        this.setState({ mousedown: true, start: a.pageX, first: true });
+      } else {
+        this.setState({ mousedown: true});
+      }
     }
 
     //console.log(a.pageX + "chalu");
@@ -98,8 +103,8 @@ class Background extends React.Component {
     this.setState({ mousedown: false });
   }
   up(b) {
-    this.setState({ mousedown: false, start: b.pageX, animation: true });
-    console.log(b.pageX + "leave");
+    this.setState({ mousedown: false, animation: true });
+    //console.log(b.pageX + "leave");
   }
   move(event) {
     //console.log(this.state.mousedown+"boolean");
@@ -109,15 +114,18 @@ class Background extends React.Component {
       // console.log(event.pageX+" "+this.state.start);
       //console.log("pagex" + event.pageX);
       //console.log("mstart" + this.state.start);
-      const mo = 385;
+      //changed from mo =385 to this.page.start as it supports in production build
+      const mo = this.state.start;
+     // console.log(mo + "mo");
       const page = event.pageX;
+      //console.log(page + "page");
       const dist = page - mo;
-      //console.log(dist + "here");
+     // console.log(dist + "here");
       if (dist < 0 || dist > 380) {
         return;
       } else {
         if (dist <= 12 && dist >= 0) {
-          console.log(event.pageX);
+          //console.log(event.pageX);
           this.setState({ translateX: dist, image: logo1 });
         } else if (dist <= 25 && dist >= 13) {
           this.setState({ translateX: dist, image: logo2 });
@@ -214,7 +222,7 @@ class Background extends React.Component {
               onMouseMove={event => {
                 this.move(event);
               }}
-              style={{ transform: `translateX(${this.state.translateX}px)` }}
+              style={{ transform: `-moz-translateX(${this.state.translateX}px)` ,transform: `translateX(${this.state.translateX}px)`}}
             >
               {this.state.animation ? (
                 <div>
