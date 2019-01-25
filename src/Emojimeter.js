@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import "./style.css";
 import logo1 from "./emojis/e1.png";
 import logo2 from "./emojis/e2.png";
 import logo3 from "./emojis/e3.png";
@@ -33,11 +35,7 @@ import logo31 from "./emojis/e31.png";
 import logo32 from "./emojis/e32.png";
 import logo33 from "./emojis/e33.png";
 
-//  const Styling = ()=>{
-//      return (<div className = "slider"></div>)
-//  }
-
-class Background extends React.Component {
+class Emojimeter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -49,83 +47,43 @@ class Background extends React.Component {
       animation: false,
       first: false
     };
-    // console.log(this.state.start + "start");
-    //console.log(this.state.translateX+"X");
-    // this.state = { x: '', y: '' };
     this.down = this.down.bind(this);
     this.leave = this.leave.bind(this);
     this.up = this.up.bind(this);
     this.move = this.move.bind(this);
   }
-  // componentDidMount(){
-  //     document.addEventListener('click',this.Drag);
-  // }
-  // componentWillUnmount(){
-  //     document.addEventListener('click',this.Drag);
-  // }
-  // Drag(){
-  //     // this.setState({ color: "blue", translate: "translateX(50px)" });
-  //     alert("Clicked");
-  // }
-  // change(e) {
 
-  //     // var c;
-  //     // c =  this.state.color==='#facd49'?'blue':'#facd49';
-  //     //can be used directly color:this.state.color==='#facd49'?'blue':'#facd49';
-  //     console.log(this.state.color + "click");
-  //     // console.log(e.ClientX,e.ClientY);
-  //     this.setState(state => ({ color: state.color === '#facd49' ? 'blue' : '#facd49' }))
-  //     console.log(this.state.color + "clickstateafter");
-
-  // }
-
-  // click(e){
-
-  //    this.setState({ x: e.screenX, y: e.screenY });
-  //     console.log(this.state.y);
-  // }
-  down(a) {
+  down(event) {
     if (this.state.animation) {
       this.setState({ mousedown: true, animation: false });
     } else {
-      //console.log("pocha");
       if (this.state.first === false) {
-        this.setState({ mousedown: true, start: a.pageX, first: true });
+        this.setState({ mousedown: true, start: event.pageX, first: true });
       } else {
-        this.setState({ mousedown: true});
+        this.setState({ mousedown: true });
       }
     }
-
-    //console.log(a.pageX + "chalu");
   }
 
   leave() {
     this.setState({ mousedown: false });
   }
-  up(b) {
+
+  up() {
     this.setState({ mousedown: false, animation: true });
-    //console.log(b.pageX + "leave");
   }
+
   move(event) {
-    //console.log(this.state.mousedown+"boolean");
     if (!this.state.mousedown) return;
     else {
       event.preventDefault();
-      // console.log(event.pageX+" "+this.state.start);
-      //console.log("pagex" + event.pageX);
-      //console.log("mstart" + this.state.start);
-      //changed from mo =385 to this.page.start as it supports in production build
       const mo = this.state.start;
-     // console.log(mo + "mo");
       const page = event.pageX;
-      //console.log(page + "page");
       const dist = page - mo;
-     // console.log(dist + "here");
       if (dist < 0 || dist > 380) {
         return;
       } else {
         if (dist <= 12 && dist >= 0) {
-          //console.log(event.pageX);
           this.setState({ translateX: dist, image: logo1 });
         } else if (dist <= 25 && dist >= 13) {
           this.setState({ translateX: dist, image: logo2 });
@@ -192,37 +150,28 @@ class Background extends React.Component {
         } else {
           this.setState({ translateX: dist, image: logo33 });
         }
-        // console.log(page - mo + "move");
       }
     }
-
-    // console.log(this.state.mousedown+"move");
   }
   render() {
-    // const { x, y } = this.state;
-    // console.log(this.state.mousedown+"down");
-    //console.log(this.state.translateX+"X");
-    // console.log(this.state.image);
-
-    // if (this.state.animation) {
     return (
       <div className="container">
         <div className="container__layout">
           <div className="container__bar" />
           <div className="container__emoji">
             <div
-              // className={
-              //   this.state.animation
-              //     ? "container__emoji-slider-animation"
-              //     : "container__emoji-slider"
-              // }
-              onMouseDown={this.down}
+              onMouseDown={event => {
+                this.down(event);
+              }}
               onMouseUp={this.up}
               onMouseLeave={this.leave}
               onMouseMove={event => {
                 this.move(event);
               }}
-              style={{ transform: `-moz-translateX(${this.state.translateX}px)` ,transform: `translateX(${this.state.translateX}px)`}}
+              style={{
+                transform: `-moz-translateX(${this.state.translateX}px)`,
+                transform: `translateX(${this.state.translateX}px)`
+              }}
             >
               {this.state.animation ? (
                 <div>
@@ -252,65 +201,12 @@ class Background extends React.Component {
                   />
                 </div>
               )}
-              {/* <img
-                src={this.state.image}
-                width="25"
-                height="25"
-                alt="img failed loading :("
-                /> */}
             </div>
           </div>
         </div>
       </div>
     );
-    //Another way of rendering animation effect 
-    // } else {
-    //   return (
-    //     <div className="container">
-    //       <div className="container__layout">
-    //         <div className="container__bar" />
-    //         <div className="container__emoji">
-    //           <div
-    //             // className={
-    //             //   this.state.animation
-    //             //     ? "container__emoji-slider-animation"
-    //             //     : "container__emoji-slider"
-    //             // }
-    //             onMouseDown={this.down}
-    //             onMouseUp={this.up}
-    //             onMouseLeave={this.leave}
-    //             onMouseMove={event => {
-    //               this.move(event);
-    //             }}
-    //             style={{ transform: `translateX(${this.state.translateX}px)` }}
-    //           >
-    //             <img
-    //               src={this.state.image}
-    //               className="container__emoji-slider"
-    //               width="25"
-    //               height="25"
-    //               alt="img failed loading :("
-    //             />
-    //             <img
-    //               src={this.state.image}
-    //               className="container__emoji-slider"
-    //               width="25"
-    //               height="25"
-    //               alt="img failed loading :("
-    //             />
-    //             {/* <img
-    //             src={this.state.image}
-    //             width="25"
-    //             height="25"
-    //             alt="img failed loading :("
-    //           /> */}
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // }
   }
 }
 
-export default Background;
+ReactDOM.render(<Emojimeter />, document.getElementById("root"));
