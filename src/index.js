@@ -180,14 +180,14 @@ class Emojimeter extends React.Component {
                     className="container__emoji-slider"
                     width="25"
                     height="25"
-                    alt="img failed loading :("
+                    alt="img loading failed:("
                   />
                   <img
                     src={this.state.image}
                     className="container__emoji-slider-animation"
                     width="25"
                     height="25"
-                    alt="img failed loading :("
+                    alt="img loading failed :("
                   />
                 </div>
               ) : (
@@ -197,7 +197,7 @@ class Emojimeter extends React.Component {
                     className="container__emoji-slider"
                     width="25"
                     height="25"
-                    alt="img failed loading :("
+                    alt="img  loading failed:("
                   />
                 </div>
               )}
