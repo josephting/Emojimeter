@@ -1,4 +1,4 @@
-# Emojimeter :fire:
+# Emojimeter ##:fire:
 
 
 ## What it does
@@ -10,6 +10,6 @@
 ## Built with Reactjs :smirk: 
 
 
-```Refer below :boom: :point_down:```
+Refer below :boom: :point_down: 
 
 ![](Emojimeter.gif)
