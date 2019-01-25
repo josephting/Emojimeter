@@ -1,4 +1,4 @@
-# Emojimeter ##:fire:
+# Emojimeter :fire:
 
 
 ## What it does
