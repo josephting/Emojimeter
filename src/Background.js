@@ -263,6 +263,7 @@ class Background extends React.Component {
         </div>
       </div>
     );
+    //Another way of rendering animation effect 
     // } else {
     //   return (
     //     <div className="container">
