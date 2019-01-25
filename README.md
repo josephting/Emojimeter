@@ -1,9 +1,10 @@
-## Emojimeter
+# Emojimeter
 
-### `Slider of Emojis`
+##What it does
+* Nothing Special
+* Just a custom slider of emojis
+* Tiny Animation effect
 
-### `Animation effect of emojis like Instagram's 0-100 slider`
-
-###  `Different emojis`
+``` Built with Reactjs :nerd_face: ```
 
 ![](Emojimeter.gif)
