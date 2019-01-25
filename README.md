@@ -1,10 +1,10 @@
 # Emojimeter
 
-##What it does
+## What it does
 * Nothing Special
 * Just a custom slider of emojis
 * Tiny Animation effect
 
-``` Built with Reactjs :nerd_face: ```
+### Built with Reactjs :smirk: 
 
 ![](Emojimeter.gif)
