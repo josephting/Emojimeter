@@ -65,3 +65,103 @@ body {
     top: -100px;
   }
 }
+
+input[type='range'].container__slider,
+input[type='range'].container__slider::-webkit-slider-runnable-track,
+input[type='range'].container__slider::-webkit-slider-thumb {
+  appearance: none;
+}
+
+.container__slider {
+  position: relative;
+  width: 100%;
+  width: 400px;
+  height: 15px;
+  background: #dbd7cb;
+  border-radius: 30px;
+  outline: none;
+}
+
+.container__slider::-webkit-slider-thumb {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: top left;
+  background-color: transparent;
+}
+.container__slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: top left;
+  background-color: transparent;
+}
+
+.container__slider.e1::-webkit-slider-thumb { background-image: url('./emojis/e1.png'); }
+.container__slider.e2::-webkit-slider-thumb { background-image: url('./emojis/e2.png'); }
+.container__slider.e3::-webkit-slider-thumb { background-image: url('./emojis/e3.png'); }
+.container__slider.e4::-webkit-slider-thumb { background-image: url('./emojis/e4.png'); }
+.container__slider.e5::-webkit-slider-thumb { background-image: url('./emojis/e5.png'); }
+.container__slider.e6::-webkit-slider-thumb { background-image: url('./emojis/e6.png'); }
+.container__slider.e7::-webkit-slider-thumb { background-image: url('./emojis/e7.png'); }
+.container__slider.e8::-webkit-slider-thumb { background-image: url('./emojis/e8.png'); }
+.container__slider.e9::-webkit-slider-thumb { background-image: url('./emojis/e9.png'); }
+.container__slider.e10::-webkit-slider-thumb { background-image: url('./emojis/e10.png'); }
+.container__slider.e11::-webkit-slider-thumb { background-image: url('./emojis/e11.png'); }
+.container__slider.e12::-webkit-slider-thumb { background-image: url('./emojis/e12.png'); }
+.container__slider.e13::-webkit-slider-thumb { background-image: url('./emojis/e13.png'); }
+.container__slider.e14::-webkit-slider-thumb { background-image: url('./emojis/e14.png'); }
+.container__slider.e15::-webkit-slider-thumb { background-image: url('./emojis/e15.png'); }
+.container__slider.e16::-webkit-slider-thumb { background-image: url('./emojis/e16.png'); }
+.container__slider.e17::-webkit-slider-thumb { background-image: url('./emojis/e17.png'); }
+.container__slider.e18::-webkit-slider-thumb { background-image: url('./emojis/e18.png'); }
+.container__slider.e19::-webkit-slider-thumb { background-image: url('./emojis/e19.png'); }
+.container__slider.e20::-webkit-slider-thumb { background-image: url('./emojis/e20.png'); }
+.container__slider.e21::-webkit-slider-thumb { background-image: url('./emojis/e21.png'); }
+.container__slider.e22::-webkit-slider-thumb { background-image: url('./emojis/e22.png'); }
+.container__slider.e23::-webkit-slider-thumb { background-image: url('./emojis/e23.png'); }
+.container__slider.e24::-webkit-slider-thumb { background-image: url('./emojis/e24.png'); }
+.container__slider.e25::-webkit-slider-thumb { background-image: url('./emojis/e25.png'); }
+.container__slider.e26::-webkit-slider-thumb { background-image: url('./emojis/e26.png'); }
+.container__slider.e27::-webkit-slider-thumb { background-image: url('./emojis/e27.png'); }
+.container__slider.e28::-webkit-slider-thumb { background-image: url('./emojis/e28.png'); }
+.container__slider.e29::-webkit-slider-thumb { background-image: url('./emojis/e29.png'); }
+.container__slider.e30::-webkit-slider-thumb { background-image: url('./emojis/e30.png'); }
+.container__slider.e31::-webkit-slider-thumb { background-image: url('./emojis/e31.png'); }
+.container__slider.e32::-webkit-slider-thumb { background-image: url('./emojis/e32.png'); }
+.container__slider.e33::-webkit-slider-thumb { background-image: url('./emojis/e33.png'); }
+.container__slider.e1::-moz-range-thumb { background-image: url('./emojis/e1.png'); }
+.container__slider.e2::-moz-range-thumb { background-image: url('./emojis/e2.png'); }
+.container__slider.e3::-moz-range-thumb { background-image: url('./emojis/e3.png'); }
+.container__slider.e4::-moz-range-thumb { background-image: url('./emojis/e4.png'); }
+.container__slider.e5::-moz-range-thumb { background-image: url('./emojis/e5.png'); }
+.container__slider.e6::-moz-range-thumb { background-image: url('./emojis/e6.png'); }
+.container__slider.e7::-moz-range-thumb { background-image: url('./emojis/e7.png'); }
+.container__slider.e8::-moz-range-thumb { background-image: url('./emojis/e8.png'); }
+.container__slider.e9::-moz-range-thumb { background-image: url('./emojis/e9.png'); }
+.container__slider.e10::-moz-range-thumb { background-image: url('./emojis/e10.png'); }
+.container__slider.e11::-moz-range-thumb { background-image: url('./emojis/e11.png'); }
+.container__slider.e12::-moz-range-thumb { background-image: url('./emojis/e12.png'); }
+.container__slider.e13::-moz-range-thumb { background-image: url('./emojis/e13.png'); }
+.container__slider.e14::-moz-range-thumb { background-image: url('./emojis/e14.png'); }
+.container__slider.e15::-moz-range-thumb { background-image: url('./emojis/e15.png'); }
+.container__slider.e16::-moz-range-thumb { background-image: url('./emojis/e16.png'); }
+.container__slider.e17::-moz-range-thumb { background-image: url('./emojis/e17.png'); }
+.container__slider.e18::-moz-range-thumb { background-image: url('./emojis/e18.png'); }
+.container__slider.e19::-moz-range-thumb { background-image: url('./emojis/e19.png'); }
+.container__slider.e20::-moz-range-thumb { background-image: url('./emojis/e20.png'); }
+.container__slider.e21::-moz-range-thumb { background-image: url('./emojis/e21.png'); }
+.container__slider.e22::-moz-range-thumb { background-image: url('./emojis/e22.png'); }
+.container__slider.e23::-moz-range-thumb { background-image: url('./emojis/e23.png'); }
+.container__slider.e24::-moz-range-thumb { background-image: url('./emojis/e24.png'); }
+.container__slider.e25::-moz-range-thumb { background-image: url('./emojis/e25.png'); }
+.container__slider.e26::-moz-range-thumb { background-image: url('./emojis/e26.png'); }
+.container__slider.e27::-moz-range-thumb { background-image: url('./emojis/e27.png'); }
+.container__slider.e28::-moz-range-thumb { background-image: url('./emojis/e28.png'); }
+.container__slider.e29::-moz-range-thumb { background-image: url('./emojis/e29.png'); }
+.container__slider.e30::-moz-range-thumb { background-image: url('./emojis/e30.png'); }
+.container__slider.e31::-moz-range-thumb { background-image: url('./emojis/e31.png'); }
+.container__slider.e32::-moz-range-thumb { background-image: url('./emojis/e32.png'); }
+.container__slider.e33::-moz-range-thumb { background-image: url('./emojis/e33.png'); }
